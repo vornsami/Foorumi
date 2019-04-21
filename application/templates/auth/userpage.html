@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  
+  <h2>{{ current_user.name }}</h2><p><a href="{{ url_for('newname') }}">Vaihda nimeä</a></p>
+  
+  Username: {{ current_user.username }} <br>
+  Account created: {{ current_user.date_created }} <br>
+  Last modified: {{ current_user.date_modified }} <br>
+  
+  {% if current_user.is_admin %}
+  MODERATOR
+  {% endif %}
+  <p><a href="{{ url_for('aloitus') }}">Takaisin</a></p>
+  
+    <table>
+    <tr>
+      <br /><th>Created Threads</th><br />
+    </tr>
+	
+    {% for thread in threads %}
+    <tr>
+      <td>
+	    {{ thread.title }}
+	    <form action="/thread" method="post">
+	      <input type="text" name="thread_id" value={{ thread.id }} readonly size=3>
+	      <input type="submit" value="Lue"/>
+	    </form>
+	  </td>
+    </tr>
+    {% endfor %}
+  </table>
+  
+  
+  
+{% endblock %}

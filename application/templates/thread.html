@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  
+  <p>
+    <h2>{{ thread.title }} </h2> 
+  </p>
+  <p>
+    {{ thread.content }}
+  </p>
+  Created by: <b>{{ User.query.filter_by(id=thread.account_id).first().name }}</b>
+  <br>
+  <a href="{{ url_for('aloitus') }}">Takaisin</a>
+  
+  {% if current_user.is_authenticated %}
+    <p></p>
+    <form action="{{ url_for('kommentoi') }}" method = "post" enctype="multipart/form-data">
+	  <table>
+	    <tr>
+		  <td>
+	        Vastaa ketjuun: <input type="text" name="thread_id" value={{ thread.id }} readonly size=3>
+	      </td>
+		</tr>
+	    <tr>
+		  <td>
+	        <textarea name="content" rows="4" cols="50"></textarea>
+	      </td>
+		</tr>
+		<tr>
+		  <td>
+	        <input type="submit" value="Kommentoi"/>
+			{{ error }}
+		  </td>
+		</tr>
+      </table>
+	</form>
+	<p></p>
+	{% if current_user.is_admin %}
+	  <table>
+	    <tr>
+		  <td>
+            Remove Thread: 
+            <form action="/removethread" method="post">
+              <input type="text" name="thread_id" value={{ thread.id }} readonly size=3>
+	          <input type="submit" value="remove"/>
+            </form>
+		  </td>
+		  <td>
+		    
+		  </td>
+		</tr>
+	  </table>
+    {% endif %}
+  {% endif %}
+  
+  <table>
+    <tr>
+      <p><h3>Comments</h3></p>
+    </tr>
+	{% for comment in comments %}
+      <tr>
+        <td>{{ comment.content }}</td>
+      </tr>
+	  <tr>
+        <td><b>- {{ User.query.filter_by(id=comment.account_id).first().name }}</b></td>
+      </tr>
+	  <tr><td><p></p></td></tr>
+    {% endfor %}
+  </table>
+  
+  
+{% endblock %}

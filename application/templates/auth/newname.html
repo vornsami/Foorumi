@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h2>Valitse uusi nimi:</h2>
+
+{{ error }}
+
+<form action="{{ url_for('newname') }}" method = "post" enctype="multipart/form-data">
+  <table>
+    <tr>
+	  <td>
+	    Nimi:
+	  </td>
+	  <td>
+	    {{ form.username }}
+	  </td>
+	</tr>
+	<tr>
+	  <td colspan ="2">
+	    <input type="submit" value="Valitse nimi"/>
+	  </td>
+	</tr>
+  </table>
+</form>
+<br>
+<a href="/">Takaisin</a>
+{% endblock %}

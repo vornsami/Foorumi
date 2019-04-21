@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h2>Kirjaudu sisaan</h2>
+
+{{ error }}
+
+<form action="{{ url_for('kirjaudu') }}" method = "post" enctype="multipart/form-data">
+  <table>
+    <tr>
+	  <td>
+	    {{ form.username.label }}
+	  </td>
+	  <td>
+	    {{ form.username }}
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    {{ form.password.label }}
+	  </td>
+	  <td>
+	    {{ form.password }}
+	  </td>
+	</tr>
+	<tr>
+	  <td colspan ="2">
+	    <input type="submit" value="Login"/>
+	  </td>
+	</tr>
+  </table>
+</form>
+
+<p>Uusi kayttaja? <a href="/uuskayttaja">Luo uusi tunnus</a></p>
+<br>
+<a href="/">Takaisin</a>
+
+{% endblock %}
