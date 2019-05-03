@@ -1,0 +1,7 @@
+readme-tiedostossa mainittua ketjujen kiinnittämistä ei saatu toteutettua.
+
+ADMIN-käyttäjät eivät voi poistaa yksittäisiä kommentteja. Tämän voisi tehdä mahdolliseksi.
+
+Käyttäjän tekemät kommentit voisi listata käyttäjäsivulla.
+
+Muiden käyttäjien käyttäjäsivujen lukeminen.

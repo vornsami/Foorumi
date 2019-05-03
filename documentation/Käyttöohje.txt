@@ -1,0 +1,34 @@
+Sovellus on keskustelufoorumi, jossa k‰ytt‰j‰t voivat tehd‰ lankoja ja kommentoida muiden k‰ytt‰jien lankoihin.
+
+K‰ytt‰j‰n voi tehd‰ painamalla ensin "Kirjaudu sis‰‰n" -painiketta. T‰‰lt‰ voi sitten lˆyt‰‰ painikkeen "Luo uusi k‰ytt‰j‰".
+Jo k‰ytˆss‰ olevaa k‰ytt‰j‰‰ tai k‰ytt‰j‰nime‰ ei voi k‰ytt‰‰.
+
+K‰ytt‰j‰n luotua k‰ytt‰j‰ll‰ voidaan kirjautua sis‰‰n.
+Sis‰‰nkirjautunut k‰ytt‰j‰ voi luoja uusia ketjuja ja kommentoida.
+
+Kirjautuneena sis‰‰n etusivulta lˆytyy uusi painike "Luo uusi ketju", joka mahdollistaa uusien ketjujen luomisen.
+T‰t‰ painamalla saadaan k‰yttˆˆn kirjoituskentt‰ otsikolle ja ketjun aiheen sis‰llˆlle.
+Painamalla "Post"-painiketta ketju lis‰t‰‰n muiden joukkoon.
+"Takaisin"-painikkeella p‰‰see takaisin etusivulle
+
+Etusivulla listattuna olevia ketjuja voi lukea painamalla "Lue"-painiketta.
+Sis‰‰nkirjautunut k‰ytt‰j‰ voi lis‰t‰ kommentin ketjun alle n‰kyv‰ksi kirjoittamalla kommentti kentt‰‰n ja painamalla "kommentoi"-n‰pp‰int‰.
+Kommenteissa n‰kyy kirjoittajan nimi.
+ADMIN-k‰ytt‰j‰t pystyv‰t poistaa ketjun vain heille n‰kyv‰ss‰ "Remove thread" osiossa olevalla "Remove"-painikkeella.
+"Takaisin"-painikkeella p‰‰see takaisin etusivulle
+
+Ketjuja voidaan hakea etusivun "Hae"-kent‰n avulla.
+Kentt‰ palauttaa kaikki ketjut joiden otsikko sis‰lt‰‰ annetun hakutermin.
+Tulokset tulevat aikaj‰rjestyksess‰ joko nousevasti tai laskevasti, joka on valittavissa tekstilaatikon viereisell‰ valikolla.
+
+K‰ytt‰j‰ voi muuttaa omaa nime‰‰n ja n‰hd‰ oman k‰ytt‰j‰sivunsa painamalla omaa k‰ytt‰j‰nime‰‰n sivun yl‰reunassa.
+Sivulla on listattuna k‰ytt‰j‰n tekem‰t ketjut sek‰ muuta satunnaista tietoa k‰ytt‰j‰st‰.
+"Vaihda nime‰"-painikkeella on mahdollista muuttaa muille k‰ytt‰jille n‰kyv‰‰ nime‰. 
+T‰m‰ nimi ei voi olla sama kuin muun k‰ytt‰j‰n k‰ytt‰m‰ nimi tai k‰ytt‰j‰nimi.
+K‰ytt‰j‰ edelleen kirjautuu sis‰‰n k‰ytt‰j‰nimell‰‰n.
+
+K‰ytt‰j‰ voi kirjautua ulos "Kirjaudu ulos"-painikkeella k‰ytt‰j‰nimens‰ vieress‰. T‰m‰n j‰lkeen voi taas kirjautua sis‰‰n.
+
+K‰ytt‰j‰n voi muuttaa ADMIN-k‰ytt‰j‰ksi vain antamalla oikeudet muokkaamalla tietokantaa.
+
+
