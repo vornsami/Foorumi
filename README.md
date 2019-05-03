@@ -9,3 +9,5 @@ Käyttäjät, jotka ovat asetettu olemaan ylläpitäjiä, tulee pystymään kiinnittämää
 ja poistaa kommentteja ja lankoja. Langan poistamisen tulee poistaa myös sen allaolevat kommentit.
 
 Github sivun kanssa olleiden ongelmien vuoksi sivu ei ollut päivittynyt push komennolla. Pahoittelut mikäli aiheuttanut hämmennystä.
+
+Heroku-sivu: https://shrouded-falls-60703.herokuapp.com/
