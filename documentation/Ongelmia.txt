@@ -1,0 +1,1 @@
+Herokussa ilmeisesti kaikki näkevät ADMIN-käyttäjille tarkoitetut ominaisuudet, mutta eivät kuitenkaan voi käyttää niitä.
