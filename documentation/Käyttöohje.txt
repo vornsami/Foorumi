@@ -31,4 +31,3 @@ Käyttäjä voi kirjautua ulos "Kirjaudu ulos"-painikkeella käyttäjänimensä vieress
 
 Käyttäjän voi muuttaa ADMIN-käyttäjäksi vain antamalla oikeudet muokkaamalla tietokantaa.
 
-
