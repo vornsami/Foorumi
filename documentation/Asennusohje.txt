@@ -1,0 +1,2 @@
+Sovelluksen tulisi toimia paikallisesti asentamalla riippuvuudet ja suorittamalla run.py.
+Sovellus alkoi myös toimimaan herokussa ilman muutoksia.

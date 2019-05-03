@@ -1,0 +1,23 @@
+_________________________
+|  Account		|
+|(pk)id:int		|
+|date_created:DateTime	|
+|date_modified:DateTime	|
+|name:String		|
+|username:String	|__________________
+|password:String	|	___________|_____________
+|acc_type:String	|	|  Comment		|
+|_______________________|	|(pk)id:int		|
+	|			|date_created:DateTime	|
+	|			|date_modified:DateTime	|
+	|			|title:String		|
+	|			|content:String		|
+________|________________	|(fk)account_id:int	|
+|  Thread		|_______|(fk)thread_id:int	|
+|(pk)id:int		|	|_______________________|
+|date_created:DateTime	|	
+|date_modified:DateTime	|
+|title:String		|
+|content:String		|
+|(fk)account_id:int	|
+|_______________________|
