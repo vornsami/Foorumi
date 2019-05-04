@@ -18,6 +18,7 @@ from application import views
 
 from application.auth import models 
 from application.auth import views 
+from application.auth.data_management import views 
 
 from application.auth.models import User
 

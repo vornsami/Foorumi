@@ -28,6 +28,7 @@ T‰m‰ nimi ei voi olla sama kuin muun k‰ytt‰j‰n k‰ytt‰m‰ nimi tai k‰ytt‰j‰nimi.
 K‰ytt‰j‰ edelleen kirjautuu sis‰‰n k‰ytt‰j‰tunnuksellaan.
 Salasanan voi vaihtaa "Vaihda salasana"-painikkeella.
 K‰ytt‰j‰ kirjautuu jatkossa uudella annetulla salasanalla sis‰‰n 
+"Poista k‰ytt‰j‰"-painike poistaa k‰ytt‰j‰n
 
 
 K‰ytt‰j‰ voi kirjautua ulos "Kirjaudu ulos"-painikkeella k‰ytt‰j‰nimens‰ vieress‰. T‰m‰n j‰lkeen voi taas kirjautua sis‰‰n.

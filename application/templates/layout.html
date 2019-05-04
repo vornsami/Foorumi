@@ -3,23 +3,91 @@
     <head>
       <meta charset="utf-8">
       <title>Foorumi</title>
+	  
+	  
+	  
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <style>
+
+		.sidenav {
+		  height: 100%;
+		  width: 200px;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  right: 0;
+		  background-color: #DDDDD0;
+		  overflow-x: hidden;
+		  padding-top: 30px;
+		}
+
+		.sidenav a {
+		  padding: 6px 8px 6px 16px;
+		  text-decoration: none;
+		  font-size: 10px;
+		  color: #818181;
+		  display: block;
+		}
+
+		.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+
+		.main {
+		  margin-right: 160px;
+		  padding: 0px 10px;
+		}
+
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+	  </style>
+	  
     </head>
 
     <body>
-      <h1>Foorumi</h1>
-      
-	  {% if current_user.is_authenticated %}
-      <p>
-	Kirjautunut nimellä <a href="{{ url_for('userpage') }}">{{ current_user.name }}</a>. <a href="{{ url_for('kirjaaulos') }}">Kirjaudu ulos</a>
-      </p>
-      {% else %}
-      <a href="{{ url_for('kirjaudu') }}">Kirjaudu</a>
-      {% endif %}
+	
+	  <div class="sidenav">
+        
+		<h3>Käyttäjät</h3>
+		<h4>Viimeksi aktiivisia:</h4>
+		{% for active in actives %}
+        <tr>
+          <td>
+	        {{ active.name }} <br>
+    	  </td>
+        </tr>
+        {% endfor %}
+		
+		<h4>Epäaktiiviset:</h4>
+		
+		{% for inactive in inactives %}
+        <tr>
+          <td>
+	        {{ inactive.name }} <br>
+    	  </td>
+        </tr>
+        {% endfor %}
+		
+      </div>
 	  
-      {% block body %}
-      <p>
-	Mikali tama on nakyissa, jokin on mennyt vikaan.
-      </p>
-      {% endblock %}
+      <div class="main">
+        <h1>Foorumi</h1>
+      
+	    {% if current_user.is_authenticated %}
+        <p>
+	Kirjautunut nimellä <a href="{{ url_for('userpage') }}">{{ current_user.name }}</a>. <a href="{{ url_for('kirjaaulos') }}">Kirjaudu ulos</a>
+        </p>
+        {% else %}
+        <a href="{{ url_for('kirjaudu') }}">Kirjaudu</a>
+        {% endif %}
+	   
+        {% block body %}
+        <p>
+  	Mikali tama on nakyissa, jokin on mennyt vikaan.
+        </p>
+        {% endblock %}
+      </div>
     </body>
   </html>
