@@ -65,7 +65,7 @@ def kirjaaulos():
 def userpage():
     t = Thread.query.filter_by(account_id = current_user.id)
     
-    return render_template("auth/userpage.html", threads = t)
+    return render_template("auth/userpage.html", threads = t, user = current_user)
 
 @app.route("/newname", methods = ["GET", "POST"])
 @login_required

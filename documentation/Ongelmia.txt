@@ -1,1 +1,3 @@
 Herokussa ilmeisesti kaikki näkevät ADMIN-käyttäjille tarkoitetut ominaisuudet, mutta eivät kuitenkaan voi käyttää niitä.
+PÄIVITYS Ohjelma alkoi tehdä samaa paikallisestikkin, vaikka se aiemmin toimi. Erona se että poistin ja asensin uudelleen venv-kansion käyttäen pip install reuirements-komentoa.
+	Ohjelma todennäköisesti hyödynsi jotakin lisäosaa mikä ei oltu lisätty requirements.txt-tiedostoon. Nyt kuitenkin kun minulla ei enään kyseistä lisäosaa ole, niin sen löytäminen voi olla haastavaa.

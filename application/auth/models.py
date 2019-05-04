@@ -39,6 +39,6 @@ class User(db.Model):
         return self.acc_type
 		
     def is_admin(self):
-        if self.acc_type == 'admin':
+        if self.acc_type == "ADMIN":
             return True		
         return False
