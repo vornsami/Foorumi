@@ -66,7 +66,8 @@ def login_required(role="ANY"):
 from application.tasks import models
 from application.tasks import views
 from application.admin import views 
-	
+    
+    
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(user_id)
@@ -74,3 +75,13 @@ def load_user(user_id):
 
 
 db.create_all()
+
+#Poistettuja käyttäjiä varten tehdään [DELETED]-niminen nukkekäyttäjä
+    
+dummy = User.query.filter_by(id=1,username="[DELETED]").first()
+if not dummy:
+    u = User("[DELETED]","[DELETED]","")
+    u.acc_type = "DUMMY"
+    u.id = 1
+    db.session().add(u)
+    db.session().commit()

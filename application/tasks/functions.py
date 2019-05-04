@@ -22,8 +22,11 @@ def __listActives__():
     t.sort(key=dateSort,reverse=True)
     ids = []
     for x in t:
-        ids.append(x.account_id)
-    
+        if x.account_id != 1:
+            ids.append(x.account_id)
+    print(ids)
+	
+	
     return __removeDups__(ids)
 
 def actives():
@@ -41,6 +44,7 @@ def inactives():
     for x in u:
         if x not in ac:
             inac.append(x)
+    inac.remove(User.query.filter_by(id=1).first())
     return inac
     
 

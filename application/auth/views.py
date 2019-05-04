@@ -20,8 +20,12 @@ def kirjaudu():
         return render_template("auth/kirjaudu.html", form = form,
                                error = "No such username or password", 
                                actives = actives(), inactives = inactives())
+							  
+    if user.username is "[DELETED]":
+        return render_template("auth/kirjaudu.html", form = form,
+                               error = "No such username or password", 
+                               actives = actives(), inactives = inactives())
     print("Kayttaja " + user.name + " tunnistettiin")
-    
     
     login_user(user)
     return redirect(url_for("aloitus"))    
