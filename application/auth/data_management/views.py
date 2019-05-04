@@ -4,7 +4,7 @@ from flask_login import login_required, current_user
 from application import app, db
 from application.auth.models import User
 from application.auth.forms import NameForm, PasswordForm
-from application.tasks.models import Thread
+from application.tasks.models import Thread, Comment
 from application.tasks.functions import actives, inactives
       
 @app.route("/userpage")
@@ -75,7 +75,7 @@ def deleteUser():
         thread.account_id = 1
     db.session().commit()
     
-    c = Thread.query.filter_by(account_id = current_user.id)
+    c = Comment.query.filter_by(account_id = current_user.id)
     
     for comment in c:
         comment.account_id = 1

@@ -24,8 +24,6 @@ def __listActives__():
     for x in t:
         if x.account_id != 1:
             ids.append(x.account_id)
-    print(ids)
-	
 	
     return __removeDups__(ids)
 

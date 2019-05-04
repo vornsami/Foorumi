@@ -2,4 +2,5 @@ Herokussa ilmeisesti kaikki näkevät ADMIN-käyttäjille tarkoitetut ominaisuudet, 
 PÄIVITYS Ohjelma alkoi tehdä samaa paikallisestikkin, vaikka se aiemmin toimi. Erona se että poistin ja asensin uudelleen venv-kansion käyttäen pip install reuirements-komentoa.
 	Ohjelma todennäköisesti hyödynsi jotakin lisäosaa mikä ei oltu lisätty requirements.txt-tiedostoon. Nyt kuitenkin kun minulla ei enään kyseistä lisäosaa ole, niin sen löytäminen voi olla haastavaa.
 
-Käyttäjän poistaminen epäonnistuu mikäli käyttäjä on tehnyt ketjuja tai kommentteja NOT NULL-ehdon epäonnistumisen vuokst
+Käyttäjän poistaminen epäonnistuu mikäli käyttäjä on tehnyt ketjuja tai kommentteja NOT NULL-ehdon epäonnistumisen vuoksi
+PÄIVITYS Pitäisi olla korjattu, Poistetun käyttäjän kommentit ja ketjut nyt ohjataan [DELETED]-nukkekäyttäjään.
