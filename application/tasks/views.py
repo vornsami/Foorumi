@@ -11,13 +11,13 @@ from application.auth.models import User
 @login_required
 def newthread():
     if request.method == "GET":
-        return render_template("newthread.html")
+        return render_template("newthread.html", form = ThreadForm(request.form))
     
     form = ThreadForm(request.form)
     
     if not form.validate():
-        return render_template("auth/uuskayttaja.html", form = form,
-                               error = "The comment is too long")
+        return render_template("newthread.html", form = form,
+                               error = "Title or content is invalid")
     
     thread = Thread(request.form.get("title"), request.form.get("content"))
     thread.account_id = current_user.id

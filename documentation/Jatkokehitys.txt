@@ -5,3 +5,5 @@ ADMIN-k‰ytt‰j‰t eiv‰t voi poistaa yksitt‰isi‰ kommentteja. T‰m‰n voisi tehd‰ mah
 K‰ytt‰j‰n tekem‰t kommentit voisi listata k‰ytt‰j‰sivulla.
 
 Muiden k‰ytt‰jien k‰ytt‰j‰sivujen lukeminen.
+
+Kuvien lis‰‰minen ketjuihin
