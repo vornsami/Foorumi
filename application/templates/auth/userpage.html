@@ -3,14 +3,18 @@
 {% block body %}
   
   <h2>{{ current_user.name }}</h2><p><a href="{{ url_for('newname') }}">Vaihda nimeä</a></p>
-  
+  <p><a href="{{ url_for('newpassword') }}">Vaihda salasanaa</a></p>
   Username: {{ current_user.username }} <br>
   Account created: {{ current_user.date_created }} <br>
   Last modified: {{ current_user.date_modified }} <br>
+  Account type: {{ current_user.acc_type }} <br>
   
-  {% if current_user.is_admin %}
-  MODERATOR
-  {% endif %}
+  <form action="/deleteUser" method="post">
+    <input type="submit" value="Delete user"/>
+  </form>
+  
+  <br>
+  
   <p><a href="{{ url_for('aloitus') }}">Takaisin</a></p>
   
     <table>

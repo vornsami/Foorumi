@@ -21,11 +21,14 @@ Ketjuja voidaan hakea etusivun "Hae"-kent‰n avulla.
 Kentt‰ palauttaa kaikki ketjut joiden otsikko sis‰lt‰‰ annetun hakutermin.
 Tulokset tulevat aikaj‰rjestyksess‰ joko nousevasti tai laskevasti, joka on valittavissa tekstilaatikon viereisell‰ valikolla.
 
-K‰ytt‰j‰ voi muuttaa omaa nime‰‰n ja n‰hd‰ oman k‰ytt‰j‰sivunsa painamalla omaa k‰ytt‰j‰nime‰‰n sivun yl‰reunassa.
+K‰ytt‰j‰ voi muuttaa omaa nime‰‰n tai salasanaansa ja n‰hd‰ oman k‰ytt‰j‰ns‰ tiedot painamalla omaa k‰ytt‰j‰nime‰‰n sivun yl‰reunassa.
 Sivulla on listattuna k‰ytt‰j‰n tekem‰t ketjut sek‰ muuta satunnaista tietoa k‰ytt‰j‰st‰.
 "Vaihda nime‰"-painikkeella on mahdollista muuttaa muille k‰ytt‰jille n‰kyv‰‰ nime‰. 
 T‰m‰ nimi ei voi olla sama kuin muun k‰ytt‰j‰n k‰ytt‰m‰ nimi tai k‰ytt‰j‰nimi.
-K‰ytt‰j‰ edelleen kirjautuu sis‰‰n k‰ytt‰j‰nimell‰‰n.
+K‰ytt‰j‰ edelleen kirjautuu sis‰‰n k‰ytt‰j‰tunnuksellaan.
+Salasanan voi vaihtaa "Vaihda salasana"-painikkeella.
+K‰ytt‰j‰ kirjautuu jatkossa uudella annetulla salasanalla sis‰‰n 
+
 
 K‰ytt‰j‰ voi kirjautua ulos "Kirjaudu ulos"-painikkeella k‰ytt‰j‰nimens‰ vieress‰. T‰m‰n j‰lkeen voi taas kirjautua sis‰‰n.
 
